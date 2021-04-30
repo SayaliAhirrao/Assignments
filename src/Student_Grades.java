@@ -54,3 +54,14 @@ class Student_Grades
 	    }
 	}
 }
+
+Set<Map.Entry<String, String>> entries  = map.entrySet();
+
+Iterator<Map.Entry<String, String>> itrs = entries.iterator();
+
+while(itrs.hasNext())
+{
+	Map.Entry<String, String> entry = itrs.next();
+	System.out.println(" key" + entry.getKey());
+	System.out.println(" value" + entry.getValue());
+}
